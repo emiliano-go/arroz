@@ -1,5 +1,7 @@
 # Titan Black
 
+> "Rice" in Spanish is "arroz". This is my rice ("arroz" in Spanish).
+
 Vanta Black-based dark theme with cool sci-fi accents for Hyprland, opencode, VS Code, and PyCharm.
 
 Inspired by deep space imagery: near-black backgrounds with teal/cyan ambient glow and warm highlights.
