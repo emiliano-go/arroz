@@ -2,7 +2,7 @@
 
 Vanta Black-based dark theme with cool sci-fi accents for Hyprland, opencode, VS Code, and PyCharm.
 
-Inspired by deep space imagery — near-black backgrounds with teal/cyan ambient glow and warm highlights.
+Inspired by deep space imagery: near-black backgrounds with teal/cyan ambient glow and warm highlights.
 
 ![wallpaper](screenshots/wallpaper.jpg)
 
@@ -10,7 +10,7 @@ Inspired by deep space imagery — near-black backgrounds with teal/cyan ambient
 
 | App | Directory | Install |
 |-----|-----------|---------|
-| **Hyprland** | `hyprland/themes/titan-black/` | `omarchy theme set titan-black` (copies to `~/.config/omarchy/themes/`) |
+| **Hyprland** | `hyprland/themes/titan-black/` | Copy wallpaper to `~/.config/hypr/wallpapers/` and add colors to `hyprland.conf` (see below) |
 | **opencode** | `opencode/themes/` | Copy `titan-black.json` to `~/.config/opencode/themes/` and set `"theme": "titan-black"` in `tui.json` |
 | **VS Code** | `vscode-titan-black/` | `code --install-extension vscode-titan-black/titan-black.vsix` |
 | **PyCharm** | `pycharm/titan-black.jar` | Settings → Plugins → Install Plugin from Disk → select `titan-black.jar` |
@@ -36,6 +36,32 @@ Inspired by deep space imagery — near-black backgrounds with teal/cyan ambient
 
 ### Hyprland
 ![Hyprland](screenshots/hyprland.png)
+
+Add to your `~/.config/hypr/hyprland.conf`:
+
+```conf
+# Titan Black colors
+$bg = rgb(050508)
+$bgDark = rgb(080810)
+$border = rgb(141420)
+$accent = rgb(5a9ebf)
+$fg = rgb(c8c8d4)
+
+general {
+    col.active_border = $accent
+    col.inactive_border = $border
+    border_size = 2
+    gaps_in = 4
+    gaps_out = 8
+}
+
+decoration {
+    col.shadow = $bgDark
+    col.shadow_border = $border
+}
+
+windowrulev2 = opacity 0.95 0.90, class:.*
+```
 
 ### opencode
 ![opencode](screenshots/opencode.png)
