@@ -1,0 +1,22 @@
+{
+  "name": "titan-black",
+  "displayName": "Titan Black",
+  "description": "Vanta Black-based dark theme with cool sci-fi accents",
+  "version": "1.0.0",
+  "publisher": "eclipse",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Titan Black",
+        "uiTheme": "vs-dark",
+        "path": "./themes/titan-black-color-theme.json"
+      }
+    ]
+  }
+}
