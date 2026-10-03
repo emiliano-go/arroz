@@ -2,7 +2,7 @@
 
 > "Rice" in Spanish is "arroz". This is my rice ("arroz" in Spanish).
 
-Vanta Black-based dark theme with cool sci-fi accents for Hyprland, opencode, VS Code, and PyCharm.
+Vanta Black-based dark theme with cool sci-fi accents for Hyprland, Quickshell, opencode, VS Code, and PyCharm.
 
 Inspired by deep space imagery: near-black backgrounds with teal/cyan ambient glow and warm highlights.
 
@@ -16,6 +16,7 @@ Inspired by deep space imagery: near-black backgrounds with teal/cyan ambient gl
 | **opencode** | `opencode/themes/` | Copy `titan-black.json` to `~/.config/opencode/themes/` and set `"theme": "titan-black"` in `tui.json` |
 | **VS Code** | `vscode-titan-black/` | `code --install-extension vscode-titan-black/titan-black.vsix` |
 | **PyCharm** | `pycharm/titan-black.jar` | Settings → Plugins → Install Plugin from Disk → select `titan-black.jar` |
+| **Quickshell** | `quickshell/` | Copy config and plugins (see below) |
 
 ## Color Palette
 
@@ -33,6 +34,18 @@ Inspired by deep space imagery: near-black backgrounds with teal/cyan ambient gl
 | Orange | `#b87848` | ![#b87848](https://via.placeholder.com/15/b87848/b87848.png) |
 | Yellow | `#c0b878` | ![#c0b878](https://via.placeholder.com/15/c0b878/c0b878.png) |
 | Purple | `#8070a0` | ![#8070a0](https://via.placeholder.com/15/8070a0/8070a0.png) |
+
+## Quickshell
+
+Config for the Omarchy Quickshell bar: `shell.json`, the `Ocr` core indicator, and the `eclipse.*` plugins it references (`cpu`, `mpris`, `pomodoro`).
+
+```bash
+cp quickshell/shell.json ~/.config/omarchy/shell.json
+cp -r quickshell/plugins/. ~/.config/omarchy/plugins/
+sudo cp -r quickshell/shell/plugins/. "$OMARCHY_PATH/shell/plugins/"
+```
+
+The theme's `shell.toml` ships inside `hyprland/themes/titan-black/` and styles the shell when Titan Black is active. Re-run the `sudo cp` after Omarchy updates, which overwrite `$OMARCHY_PATH/shell`.
 
 ## Screenshots
 
