@@ -45,8 +45,8 @@ hover-cursor-border-width = 1
 hover-cursor-border-alpha = 0.25
 
 # Focus: Qt activeFocus. Mirror the hover-cursor values by default so
-# mouse hover, keyboard cursor, and tab focus all read as the same state
-# — themes that want focus to stand out override these four lines.
+# mouse hover, keyboard cursor, and tab focus all read as the same state;
+# themes that want focus to stand out override these four lines.
 focus-color        = "#c8c8d4"
 focus-fill-alpha   = 0.08
 focus-border       = "#c8c8d4"

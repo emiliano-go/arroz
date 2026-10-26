@@ -87,7 +87,7 @@ Item {
         height: Style.space(34)
 
         // Drag surface. Uses global cursor deltas against the position taken
-        // at press — local deltas would fight the moving window and glitch.
+        // at press; local deltas would fight the moving window and glitch.
         MouseArea {
           id: dragArea
 
@@ -423,10 +423,10 @@ Item {
         return
 
       if (timerLogic.phase === "focus") {
-        timerLogic.notify("Focus done — take a break")
+        timerLogic.notify("Focus done: take a break")
         timerLogic.beginBreak(timerLogic.breakMinutes)
       } else {
-        timerLogic.notify("Break over — back to focus")
+        timerLogic.notify("Break over: back to focus")
         timerLogic.begin(timerLogic.focusMinutes, "focus")
       }
     }

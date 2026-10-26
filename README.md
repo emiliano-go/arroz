@@ -4,8 +4,8 @@
 
 Two themes with cool sci-fi accents for Hyprland, Quickshell, opencode, VS Code, and PyCharm:
 
-- **Titan Black** — Vanta Black-based dark theme, inspired by deep space imagery: near-black backgrounds with teal/cyan ambient glow and warm highlights.
-- **Titan Light** — daylight counterpart with soft grey surfaces and the same teal accent.
+- **Titan Black**: Vanta Black-based dark theme, inspired by deep space imagery: near-black backgrounds with teal/cyan ambient glow and warm highlights.
+- **Titan Light**: daylight counterpart with soft grey surfaces and the same teal accent.
 
 ![wallpaper](screenshots/wallpaper.jpg)
 
